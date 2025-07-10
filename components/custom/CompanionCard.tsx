@@ -21,11 +21,11 @@ const CompanionCard = ({id, name, topic, subject, duration, color}: CompanionCar
       </div>
 
       <h2 className="text-2xl font-bold">{name}</h2>
-      <p className="text-sm -mt-2">{topic}</p>
+      <p className="text-lg -mt-4">{topic}</p>
 
       <div className="flex gap-2 items-center">
-        <Image src="/icons/clock.svg" alt="Clock" width={14} height={14} />
-        <span className="text-sm">{duration} minutes</span>
+        <Image src="/icons/clock.svg" alt="Clock" width={20} height={20} />
+        <span className="text-base">{duration} minutes</span>
       </div>
 
       <Link
