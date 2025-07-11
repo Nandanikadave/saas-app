@@ -5,8 +5,6 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-  TableCaption,
-  TableFooter,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -26,9 +24,13 @@ const CompanionsList = ({ title, companions, classNames }) => {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="md:text-lg w-2/3 text-base">Lessons</TableHead>
+            <TableHead className="md:text-lg w-2/3 text-base">
+              Lessons
+            </TableHead>
             <TableHead className="md:text-lg text-base">Subject</TableHead>
-            <TableHead className="md:text-lg text-base text-right">Duration</TableHead>
+            <TableHead className="md:text-lg text-base text-right">
+              Duration
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -49,15 +51,22 @@ const CompanionsList = ({ title, companions, classNames }) => {
                       />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <p className="md:text-xl text-base font-semibold">{name}</p>
+                      <p className="md:text-xl text-base font-semibold">
+                        {name}
+                      </p>
                       <p className="md:text-lg text-sm">{topic}</p>
                     </div>
                   </div>
                 </Link>
               </TableCell>
               <TableCell className="flex justify-center">
-                <div className="subject-badge w-full max-md:hidden justify-center mt-6">{subject}</div>
-                <div className="flex justify-center items-center rounded-lg w-fit p-2 md:hidden mt-2" style={{ backgroundColor: getSubjectColor(subject) }}>
+                <div className="subject-badge w-full max-md:hidden justify-center mt-6">
+                  {subject}
+                </div>
+                <div
+                  className="flex justify-center items-center rounded-lg w-fit p-2 md:hidden mt-2"
+                  style={{ backgroundColor: getSubjectColor(subject) }}
+                >
                   <Image
                     src={`/icons/${subject}.svg`}
                     alt={subject}
@@ -68,8 +77,8 @@ const CompanionsList = ({ title, companions, classNames }) => {
               </TableCell>
               <TableCell>
                 <div className="flex justify-end items-center gap-2 w-full ">
-                  <p className="md:text-lg text-base">{duration} {' '}
-                    <span className="max-md:hidden">mins</span>
+                  <p className="md:text-lg text-base">
+                    {duration} <span className="max-md:hidden">mins</span>
                   </p>
                   <div className=" md:hidden">
                     <Image
