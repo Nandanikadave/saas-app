@@ -14,7 +14,7 @@ const Navitems = () => {
   return (
     <div className='flex items-center gap-8'>
       {NavItems.map((item) => (
-        <Link key={item.label} href={item.href} className={cn(pathName === item.href ? 'text-primary font-semibold' : 'text-muted-foreground', 'ransition-colors hover:text-primary')}>
+        <Link key={item.label} href={item.href} className={cn(pathName === item.href ? 'text-primary font-semibold' : 'text-muted-foreground', 'transition-colors hover:text-primary')}>
           {item.label}
         </Link>
       ))}
