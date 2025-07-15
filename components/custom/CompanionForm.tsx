@@ -145,8 +145,8 @@ const CompanionForm = () => {
                     <SelectValue placeholder="Select the voice" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Male">Male</SelectItem>
-                    <SelectItem value="Female">Female</SelectItem>
+                    <SelectItem value="male">Male</SelectItem>
+                    <SelectItem value="female">Female</SelectItem>
                   </SelectContent>
                 </Select>
               </FormControl>
@@ -170,8 +170,8 @@ const CompanionForm = () => {
                     <SelectValue placeholder="Select the style" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="Friendly">Friendly</SelectItem>
-                    <SelectItem value="Professional">Professional</SelectItem>
+                    <SelectItem value="casual">Casual</SelectItem>
+                    <SelectItem value="formal">Formal</SelectItem>
                   </SelectContent>
                 </Select>
               </FormControl>
